@@ -1,0 +1,111 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div class="shell">
+  <header class="shell-header">
+
+      <h1>Job Application form</h1>
+
+
+  </header>
+  <main class="shell-body">
+
+    <h2>Job Application for the Company</h2>
+    <p>Please Fill The information below.</p>
+    
+    <div id="outside">
+<form id="survey-form" action="/my-handling-form-page" method="post">
+  <h1 id="title"></h1>
+  <p id="description"><b>Note:---</b> </p>
+  
+  <!-- ------------------Personal Details---------------------------- -->
+  <fieldset>
+    <!-- groups of widgets that share the same purpose, for styling and semantic purposes -->
+    <legend>Personal Details</legend>
+    <!-- formally describes the purpose of the fieldset it is included inside. -->
+    <div>
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" required id="name" name="user_name" placeholder="Enter name here">   </div>
+    <div>
+      <label for="address-label">Address:</label>
+      <input type="Address" id="address" name="Address" placeholder="Enter address here">   </div>
+    <div>
+      <label id="email-label" for="Email">Email:</label>
+      <input type="email" required id="email" name="user_email" placeholder="Enter email here">   </div>
+    <div>
+      <label id="number-label" for="phone">Phone Number:</label>
+      <input type="number" id="number" name="user_name" placeholder="Enter 10 digit number" min="1" max="9">  </div>
+
+
+    <!-- ------------------Radio Buttons-------------------------------- -->
+    <div>
+      <label for="Gender">Gender</label>
+      <p>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </p>
+    </div>
+
+  
+  </fieldset>
+  <!-- ------------------Checkboxes-------------------------------- -->
+  <fieldset>
+    <label for="Gender">How were you referred to us?</label>
+    <p>
+      <input type="checkbox" name="Employee" value="emp"> Employee <br>
+      <input type="checkbox" name="Walk-In" value="Walk"> Walk-In<br>
+      <input type="checkbox" name="Newspaper Ad" value="Newspaper-Ad"> Newspaper Ad<br>
+      <input type="checkbox" name="Twitter" value="Twitter" checked> Twitter<br>
+      <input type="checkbox" name="Craigslist" value="Craigslist" checked> Craigslist<br>
+      <input type="checkbox" name="Facebook" value="Facebook" checked> Facebook<br>
+    </p>
+  </fieldset>
+  
+  <!-- -----------------Dropdown menus--------------------------------- -->
+  
+  <fieldset>
+    <div>
+      <label for="politics">Departmant you want to work:</label>
+      <select id="dropdown">
+  <option value="left">IT</option>
+  <option value="right">HR</option>
+  <option value="conservative">Customer Services</option>
+  <option value="nazi">Sale</option>
+  <option value="nazi">Other</option>
+  </select>
+
+      <label for="politics">Education Level Completed:</label>
+      <select id="dropdown2">
+  <option value="University">University</option>
+  <option value="College">College</option>
+  <option value="Secondary">High School</option>  
+  <option value="None">None</option>
+  </select>
+    </div>
+  </fieldset>
+
+  <!-- --------------------Text Areas------------------------------ -->
+  
+  <fieldset>
+    <legend>Proffessional Expreinces</legend>
+    <div>
+      <label for="msg"></label>
+      <p> Tell us about yourself</p>
+      <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    <div>
+      <label for="msg">Please upload you resume and your note about it</label><br>
+      <textarea id="msg2" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    <p>Upload your files from here
+      <button>Attach Files</button></p>
+  </fieldset>
+
+  <div id="submitbutton">
+    <button type="submit" id="submit">Send your application</button>   </div>
+
+</form>
+  </div>
+  </main>
+  
+  <footer class="shell-footer">    <hr>
+    <p>Written and coded by <a href="https://www.linkedin.com/in/o%C4%9Fuzhan-%C3%B6zt%C3%BCrk-a24bb8186/" target="_blank">Oguzhan Ozturk</a>.</p></footer>
+
+</div>
